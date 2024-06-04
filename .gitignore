@@ -1,0 +1,7 @@
+#ignorar la carpeta "prueba-gitignore"
+
+prueba-gitignore
+
+#ignorar todos los archivos .txt del repositorio
+
+*.txt
