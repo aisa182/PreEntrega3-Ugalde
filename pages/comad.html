@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Comad</title>
     <!--Boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -21,125 +21,141 @@
         <div class="header">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">
-                    <img src="../assets/img/Logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Currículum</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Habilidades</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Formación</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Experiencia</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Formación</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Proyectos</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                      </li>
-                     
-                      </li>
-                    </ul>
-                  </div>
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/img/Logo.svg" alt="Logo" width="30" height="24"
+                            class="d-inline-block align-text-top">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Currículum</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Habilidades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Formación</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Experiencia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./proyectos.html">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </nav>
+            </nav>
         </div>
     </header>
-
-
-
-
-
     <main>
-        <div class="container mt-5">
-            <h2>Galería de Imágenes</h2>
-            <div class="row">
-                <!-- Imagenes en miniatura -->
-                <div class="col-md-4">
-                    <img src="https://via.placeholder.com/300" class="img-thumbnail" data-toggle="modal" data-target="#galleryModal" data-slide-to="0">
+        <!--Title-->
+        <div class="proyecto-title">
+            <a href="../pages/proyectos.html">
+                <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-arrow-left"></i></button>
+            </a>
+            <h1 style="margin-left: 16px;">Comad System Monitoring / App Inspection</h1>
+        </div>
+        <!--Tabs-->
+        <div style="margin: 32px;">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                        type="button" role="tab" aria-controls="nav-home" aria-selected="true">Descripción</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Proceso</button>
+                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Métodos</button>
+                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-video"
+                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Video</button>
+
                 </div>
-                <div class="col-md-4">
-                    <img src="https://via.placeholder.com/300" class="img-thumbnail" data-toggle="modal" data-target="#galleryModal" data-slide-to="1">
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                    tabindex="0" style="text-align: justify; margin: 32px;">Diseño de interfaz de usuario para un
+                    software esencial, el cual gestiona los datos capturados por un dispositivo de monitoreo de polines
+                    en correas transportadoras mineras.
                 </div>
-                <div class="col-md-4">
-                    <img src="https://via.placeholder.com/300" class="img-thumbnail" data-toggle="modal" data-target="#galleryModal" data-slide-to="2">
+
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                    tabindex="0" style="text-align: justify; margin: 32px;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ipsa ducimus asperiores facere, dicta
+                    laboriosam? Libero dignissimos repudiandae amet, consectetur eligendi, pariatur suscipit fugiat
+                    porro aut veniam natus. Reiciendis, at?
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"
+                    tabindex="0" style="text-align: justify; margin: 32px;">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Amet ipsa ducimus asperiores facere, dicta
+                    laboriosam? Libero dignissimos repudiandae amet, consectetur eligendi, pariatur suscipit fugiat
+                    porro aut veniam natus. Reiciendis, at?
+                </div>
+                <div class="tab-pane fade" id="nav-video" role="tabpanel" aria-labelledby="nav-video-tab"
+                    tabindex="0">
+                    <iframe style="margin: 16px;"    width="560" height="315" src="https://www.youtube.com/embed/vf6xmH9wOz8?si=lW8dEbqh_qKzHwD5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-    
-        <!-- Modal con Carousel -->
-        <div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="galleryModalLabel">Galería</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="https://via.placeholder.com/800" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="https://via.placeholder.com/800" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="https://via.placeholder.com/800" class="d-block w-100" alt="...">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
+        <!--carousel-->
+        <div id="carouselExampleIndicators" class="carousel slide" style="margin: 32px;">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/img/proyectos/comad/comad1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/proyectos/comad/comad2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/proyectos/comad/comad3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/proyectos/comad/comad4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/proyectos/comad/comad5.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/proyectos/comad/comad6.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </main>
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
     <footer class="grillaLines footer">
         <h2>Contacto</h2>
-        <div >
+        <div>
             <ul class="listaContacto">
                 <li><i class="fa-regular fa-envelope" style="margin-right: 16px;"></i>iugaldedesigner@gmail.com</li>
                 <li><i class="fa-brands fa-whatsapp" style="margin-right: 16px;"></i>+569 6152 4411</li>
@@ -151,17 +167,17 @@
             <h4>Escribeme!</h4>
             <div class="mb-3 ">
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu correo">
-              </div>
-              <div class="mb-3">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Deja tu mensaje"></textarea>
-              </div>
-              <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    placeholder="Deja tu mensaje"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar</button>
         </div>
         <h6>&#169;Copyright 2024 | Todos los derechos reservados</h6>
-        <div class="irArriba">
-            <a class="btn btn-primary" href="#arriba" role="button"><i class="fa-solid fa-jet-fighter-up" style="margin-right: 8px;"></i>Ir arriba</a>
-        </div>
     </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

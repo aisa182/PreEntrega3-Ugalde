@@ -6,28 +6,22 @@
 
 /*grilla*/
 
-#grilla {
+#index-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(17, auto);
-    grid-template-areas:
-        'header header header'
-        'portada portada portada'
-        'sobreMi sobreMi sobreMi'
-
-        "habilidades habilidades habilidades"
-        "habilidades habilidades habilidades"
-        "habilidades habilidades habilidades"
-        "formacion formacion formacion"
-        "formacion formacion formacion"
-        "formacion formacion formacion"
-        "experiencia experiencia experiencia"
-        "experiencia experiencia experiencia"
-        "experiencia experiencia experiencia"
-        "proyectos proyectos proyectos"
-        "footer footer footer"
-       
-
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header"
+    "portada"
+    "sobreMi"
+    "habilidades"
+    "formacion"
+    "experiencia"
+    "proyectos"
+    "footer";
+    width: 100%;
+    justify-items: center;
+    align-items: center;
 }
 
 
@@ -35,104 +29,78 @@
 /*header*/
 header {
     grid-area: header;
-    grid-column: span 3;
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: white;
+    width: 100%;
 }
 
-header .header {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid lightgrey;
-}
-
-header .header-izq {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-header .header-der {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
-
-header .header-der i {
-    display: none;
-}
-
-
-nav ul li {
-    display: inline;
-    list-style: none;
-    padding: 16px;
-}
-
-nav ul a {
-    text-decoration: none;
-}
-
-/*fin header*/
 
 /*portada*/
 
-.portada {
+.portada-grid {
     grid-area: portada;
-    grid-column: span 3;
-    padding: 0;
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+    
 }
 
-.portada-container {
+.portada-grid div{
     display: flex;
     justify-content: center;
+    grid-column: 1/4;
     margin: 80px 0px;
 }
 
-/*fin portada*/
+/*sobreMi*/
 
-/*SobreMi*/
-
-.sobreMi {
+.sobreMi-grid {
     grid-area: sobreMi;
-    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: auto;
+    width: 100%;
 }
 
-.sobreMi-container {
+.sobreMi-container{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    padding: 16px;
-    margin: 80px 0px;
-}
-
-.sobreMi-container img {
-    margin-right: 32px;
-}
-
-.sobreMi-text {
-    width: 400px;
+    grid-column: 2/3;
+    margin: 16px;
     text-align: justify;
+    align-items: center;
 }
 
-/*fin sobreMi*/
+.sobreMi-container p{
+    margin: 32px;
+}
+
+
 
 /*habilidades*/
 
-.habilidades {
+.habilidades-grid {
     grid-area: habilidades;
-    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: auto;
+    width: 100%;
 }
 
-.habilidades-container {
+.habilidades-title{
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.habilidades-grid div {
+    grid-column: 2/3;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 16px;
-    margin: 80px 0px;
+    justify-content: space-around;
 }
 
 .habilidades-item {
@@ -140,60 +108,163 @@ nav ul a {
 
 }
 
-/*fin habilidades*/
 
 /*formacion*/
-
-.formacion {
+.formacion-grid{
     grid-area: formacion;
-    position: relative;
-    /* Asegura que la línea esté posicionada correctamente */
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: auto;
+    width: 100%;
+    position: relative; /* Añade esto para permitir el posicionamiento absoluto de la línea */
 }
 
-.linea-vertical {
+.formacion-title{
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.formacion-grid div:nth-child(2) { /*linea de tiempo*/
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Añade esto para el posicionamiento de la línea dentro de este div */
+}
+
+.formacion-grid div:nth-child(2) h3{ /*años*/
+    background-color: white;
+    margin: 16px;
+}
+
+.itemLinea{ /*item linea de tiempo*/
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    margin: 8px 0px;
+}
+
+.itemLinea i { /*item linea de tiempo*/
+    margin: 8px;
+}
+
+.vertical-line { /* Línea vertical */
     position: absolute;
+    left: 50%; /* Centra la línea en la columna */
     top: 0;
     bottom: 0;
-    left: 50%;
-    width: 1px;
-    background-color: black;
-    transform: translateX(-50%);
-    z-index: -1;
-}
-
-.formacion-titulo {
-    grid-area: formacion-titulo;
-}
-
-.formacion-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0px;
-    margin: 0px;
-}
-
-.formacion-item {
-    margin: 32px;
-}
+    width: 2px;
+    background-color: black; /* Cambia el color según tus necesidades */
+    z-index: -1; /* Asegura que esté detrás del contenido */}
 
 
-/*Fin de formacion*/
 
-.experiencia {
+
+/*experiencia*/
+.experiencia-grid{
     grid-area: experiencia;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: auto;
+    width: 100%;
+    position: relative; /* Añade esto para permitir el posicionamiento absoluto de la línea */
 }
+
+.experiencia-title{
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.experiencia-grid div:nth-child(2) { /*linea de tiempo*/
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Añade esto para el posicionamiento de la línea dentro de este div */
+}
+.experiencia-grid div:nth-child(2) h3{ /*años*/
+    background-color: white;
+    margin: 16px;
+}
+
+.itemLinea{ /*item linea de tiempo*/
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    margin: 8px 0px;
+}
+
+.itemLinea i { /*item linea de tiempo*/
+    margin: 8px;
+}
+
+.vertical-line { /* Línea vertical */
+    position: absolute;
+    left: 50%; /* Centra la línea en la columna */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: black; /* Cambia el color según tus necesidades */
+    z-index: -1; /* Asegura que esté detrás del contenido */}
+
+
+
+
+
+
+
+
 
 /*proyectos*/
 
-
-.proyectos {
+.proyectos-grid{
     grid-area: proyectos;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: auto;
+    width: 100%;
 }
+
+.proyectos-title{
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.proyectos-container{
+    grid-column: 2/3;
+    margin: 88px 0px;
+    
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "laboratorio-grid aula-grid comad-grid button-grid";
+    gap: 15px;
+}
+
 
 .itemGaleria {
     position: relative;
 }
+
+.itemGaleria img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    padding: 0px;
+    border: 1px solid grey;
+    border-radius: 16px;
+}
+
+
 
 .overlay {
     position: absolute;
@@ -223,27 +294,6 @@ nav ul a {
     opacity: 1;
 }
 
-.itemGaleria img {
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-    padding: 0px;
-    border: 1px solid grey;
-    border-radius: 16px;
-}
-
-.galeria {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "laboratorio-grid aula-grid comad-grid button-grid"
-    ;
-
-    margin: 32px 32px 160px 32px ;
-    gap: 15px;
-}
-
 .laboratorio-grid {
     grid-area: laboratorio-grid;
 }
@@ -268,7 +318,7 @@ nav ul a {
     height: 100%;
 }
 
-/*Fin de proyectos*/
+
 
 
 
@@ -378,6 +428,25 @@ nav ul a {
             "comad-grid button-grid";
         margin: 16px 16px 88px 16px;
     }
+    .itemLinea{ /*item linea de tiempo*/
+        display: flex; flex-direction: column; align-items: center;
+    }
+    .itemLinea i {
+        display: none;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .sobreMi-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-column: 2/3;
+        margin: 16px;
+        text-align: justify;
+        align-items: center;
+    }
+    
 }
 
 @media screen and (max-width: 540px){

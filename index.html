@@ -16,72 +16,86 @@
 
 
 
-<body id="grilla">
+<body id="index-grid">
     <header>
         <div class="header">
-            <div class="header-izq">
-                <div>
-                    <a href="./index.html">
-                        <img src="./assets/img/Logo.svg" alt="logo" width="18px" style="margin: 8px;">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/img/Logo.svg" alt="Logo" width="30" height="24"
+                            class="d-inline-block align-text-top">
                     </a>
-                </div>
-            </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Currículum</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Habilidades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Formación</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Experiencia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./pages/proyectos.html">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
 
-            <div class="header-der">
-                <nav>
-                    <ul class="listaMenu">
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a
-                                href="https://drive.google.com/file/d/1yOvRq6z23KYSXIWcetNaBg_Kn5qokkw-/view?usp=sharing">Currículum</a>
-                        </li>
-                        <li><a href="./pages/habilidades.html">Habilidades</a></li>
-                        <li><a href="./pages/formacion.html">Formación</a></li>
-                        <li><a href="./pages/experiencia.html">Experiencia</a></li>
-                        <li><a href="./pages/proyectos-uxui.html">Proyectos UX UI</a></li>
-                        <li><a href="https://drive.google.com/file/d/1GeqR8FxGduCFEmgAEs68eV8X5zDKAEsP/view">Proyectos
-                                DI</a>
-                        </li>
-                        <li><a href="#contacto">Contacto</a></li>
-                    </ul>
-                </nav>
-                <div><i class="fa-solid fa-bars" style="margin: 8px;"></i></div>
-            </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
+    <!--portada-->
 
-    <section  class="portada" id="arriba">
-        <div class="portada-container">
+    <section class="portada-grid" id="arriba">
+        <div>
             <img src="./assets/img/Logo h280.png" alt="logo">
         </div>
     </section>
 
-    <section class="sobreMi">
+    <!--sobreMi-->
+
+    <section class="sobreMi-grid">
         <div class="sobreMi-container">
+
             <img src="./assets/img/foto perfil.jpg" alt="Foto de perfil" height="200px">
-            <div class="sobreMi-text">
-                <p>
-                    Hola! Mi nombre es Isaac. Soy Diseñador UX/UI con más de 2 años de experiencia, especializado en
-                    interfaces que brindan una
-                    experiencia óptima. He trabajado en proyectos de educación, administración y minería.
+            <p>
+                Hola! Mi nombre es Isaac. Soy Diseñador UX/UI con más de 2 años de experiencia, especializado en
+                interfaces que brindan una
+                experiencia óptima. He trabajado en proyectos de educación, administración y minería.
 
-                    Tengo 2 años de experiencia como Diseñador Industrial, colaborando en equipos multidisciplinarios en
-                    diseño 3D, diseño gráfico, prototipado y planimetría, entre otros.
+                Tengo 2 años de experiencia como Diseñador Industrial, colaborando en equipos multidisciplinarios en
+                diseño 3D, diseño gráfico, prototipado y planimetría, entre otros.
 
-                    Mi trayectoria en diseño industrial ha sido una base sólida para mi transición al diseño UX/UI, ya
-                    que
-                    ambas disciplinas comparten un enfoque centrado en el usuario y el uso de diversas herramientas y
-                    métodos.
-                </p>
-            </div>
+                Mi trayectoria en diseño industrial ha sido una base sólida para mi transición al diseño UX/UI, ya
+                que
+                ambas disciplinas comparten un enfoque centrado en el usuario y el uso de diversas herramientas y
+                métodos.
+            </p>
+
+
         </div>
+
     </section>
 
-    <section class="habilidades">
-        <h2 class="text-center">
+    <!--habilidades-->
+    <section class="habilidades-grid">
+        <h2 class="habilidades-title">
             Habilidades
         </h2>
-        <div class="habilidades-container">
-
+        <div>
             <div class="card habilidades-item" style="width: 18rem;">
                 <img src="./assets/img/logoPatron.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -108,266 +122,216 @@
             </div>
 
         </div>
-
         </div>
     </section>
 
-    <section class="formacion">
-        <h2 class="text-center my-4">Formación</h2>
-        <div class="container formacion">
-            <div class="linea-vertical"></div> <!-- Línea vertical -->
+    <!--formacion-->
+    <section class="formacion-grid">
+        <h2 class="formacion-title">Últimas certificaciones</h2>
+        <div>
+            <!--Línea vertical-->
+            <div class="vertical-line"></div>
 
-            <div class="formacion-container">
-                <div class="card formacion-item" style="width: 18rem; height: 10rem; margin-top: 50px;">
+            <!--Año-->
+            <div>
+                <h3>2024</h3>
+            </div>
+
+            <!--item linea-->
+            <div class="itemLinea">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/img/certificados/Certificado UX Research.png" class="card-img-top" alt="...">
+                </div>
+
+                <i class="fa-solid fa-circle"></i>
+
+                <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                        <h5 class="card-title">Desarrollo Web Flex</h5>
+                        <h5 class="card-title">UX Research</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">Coderhouse</h6>
-                        <p class="card-text">Abr 2024 - Jun 2024</p>
-                        <a href="#" class="card-link">Ver certificado</a>
+                        <p class="card-text">Mar 2024 - May 2024.</p>
                     </div>
                 </div>
-                <div class="card formacion-item" style="width: 18rem;">
+
+            </div>
+
+            <!--Año-->
+            <div>
+                <h3>2023</h3>
+            </div>
+
+            <!--item linea-->
+            <div class="itemLinea">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/img/certificados/Certificado Curso Frontend Udemy.jpg" class="card-img-top"
+                        alt="...">
+                </div>
+
+                <i class="fa-solid fa-circle"></i>
+
+                <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                        <img src="./assets/img/logoPatron.png" class="card-img-top" alt="...">
+                        <h5 class="card-title">Frontend Web Developer</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Udemy</h6>
+                        <p class="card-text">Oct 23 - Dic 2023</p>
                     </div>
+                </div>
+
+            </div>
+
+            <!--item linea-->
+            <div class="itemLinea">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/img/certificados/Certificado UX Writting.png" class="card-img-top" alt="...">
+                </div>
+
+                <i class="fa-solid fa-circle"></i>
+
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">UX Writting</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Coderhouse</h6>
+                        <p class="card-text">Mar 2023 May 2023</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button type="button" class="btn btn-primary" style="margin-top: 32px;">Ver más</button>
+    </section>
+
+    <!--experiencia-->
+    <section class="experiencia-grid">
+        <h2 class="experiencia-title">Experiencia</h2>
+        <div>
+            <!--Línea vertical-->
+            <div class="vertical-line"></div>
+
+            <!--Año-->
+            <div>
+                <h3>2024</h3>
+            </div>
+
+            <!--item linea-->
+            <div class="itemLinea">
+
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">IACC</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Diseñador UX UI</h6>
+                        <p class="card-text">Nov 2022 - Feb 2024</p>
+                    </div>
+                </div>
+
+                <i class="fa-solid fa-circle"></i>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/img/experiencia/iacc.png" class="card-img-top" alt="...">
                 </div>
             </div>
 
-            <div class="formacion-container">
-                <div class="card formacion-item" style="width: 18rem; height: 10rem; margin-top: 50px;">
+            <!--Año-->
+            <div>
+                <h3>2022</h3>
+            </div>
+
+            <!--item linea-->
+            <div class="itemLinea">
+
+                <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                        <h5 class="card-title">Desarrollo Web Flex</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Coderhouse</h6>
-                        <p class="card-text">Abr 2024 - Jun 2024</p>
-                        <a href="#" class="card-link">Ver certificado</a>
+                        <h5 class="card-title">Krolic</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Diseñador UX UI</h6>
+                        <p class="card-text">Feb 2022 - Nov 2022</p>
                     </div>
                 </div>
-                <div class="card formacion-item" style="width: 18rem;">
-                    <div class="card-body">
-                        <img src="./assets/img/logoPatron.png" class="card-img-top" alt="...">
-                    </div>
+
+                <i class="fa-solid fa-circle"></i>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/img/experiencia/krolic.png" class="card-img-top" alt="...">
                 </div>
             </div>
 
-            <div class="formacion-container">
-                <div class="card formacion-item" style="width: 18rem; height: 10rem; margin-top: 50px;">
+            <!--Año-->
+            <div>
+                <h3>2021</h3>
+            </div>
+
+            <!--item linea-->
+            <div class="itemLinea">
+
+                <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                        <h5 class="card-title">Desarrollo Web Flex</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Coderhouse</h6>
-                        <p class="card-text">Abr 2024 - Jun 2024</p>
-                        <a href="#" class="card-link">Ver certificado</a>
+                        <h5 class="card-title">Mine Bridges</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Diseñador Industrial</h6>
+                        <p class="card-text">Mar 2019 - Jul 2021</p>
                     </div>
                 </div>
-                <div class="card formacion-item" style="width: 18rem;">
-                    <div class="card-body">
-                        <img src="./assets/img/logoPatron.png" class="card-img-top" alt="...">
-                    </div>
+
+                <i class="fa-solid fa-circle"></i>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/img/experiencia/minebridges.png" class="card-img-top" alt="...">
                 </div>
             </div>
 
-            <div class="formacion-container">
-                <div class="card formacion-item" style="width: 18rem; height: 10rem; margin-top: 50px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Desarrollo Web Flex</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Coderhouse</h6>
-                        <p class="card-text">Abr 2024 - Jun 2024</p>
-                        <a href="#" class="card-link">Ver certificado</a>
-                    </div>
-                </div>
-                <div class="card formacion-item" style="width: 18rem;">
-                    <div class="card-body">
-                        <img src="./assets/img/logoPatron.png" class="card-img-top" alt="...">
-                    </div>
-                </div>
-            </div>
-
-            <div class="formacion-container">
-                <div class="card formacion-item" style="width: 18rem; height: 10rem; margin-top: 50px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Desarrollo Web Flex</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Coderhouse</h6>
-                        <p class="card-text">Abr 2024 - Jun 2024</p>
-                        <a href="#" class="card-link">Ver certificado</a>
-                    </div>
-                </div>
-                <div class="card formacion-item" style="width: 18rem;">
-                    <div class="card-body">
-                        <img src="./assets/img/logoPatron.png" class="card-img-top" alt="...">
-                    </div>
-                </div>
-            </div>
-
-            <div class="formacion-container">
-                <div class="card formacion-item" style="width: 18rem; height: 10rem; margin-top: 50px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Desarrollo Web Flex</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Coderhouse</h6>
-                        <p class="card-text">Abr 2024 - Jun 2024</p>
-                        <a href="#" class="card-link">Ver certificado</a>
-                    </div>
-                </div>
-                <div class="card formacion-item" style="width: 18rem;">
-                    <div class="card-body">
-                        <img src="./assets/img/logoPatron.png" class="card-img-top" alt="...">
-                    </div>
-                </div>
-            </div>
-
-            <div class="formacion-container">
-                <div class="card formacion-item" style="width: 18rem; height: 10rem; margin-top: 50px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Desarrollo Web Flex</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Coderhouse</h6>
-                        <p class="card-text">Abr 2024 - Jun 2024</p>
-                        <a href="#" class="card-link">Ver certificado</a>
-                    </div>
-                </div>
-                <div class="card formacion-item" style="width: 18rem;">
-                    <div class="card-body">
-                        <img src="./assets/img/logoPatron.png" class="card-img-top" alt="...">
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-        </div>
+            <button type="button" class="btn btn-primary" style="margin-top: 32px;">Ver más</button>
 
 
     </section>
 
-    <section class="experiencia" style="margin-bottom: 80px;">
-        <h2 class="text-center my-4">Experiencia</h2>
-        <div class="container formacion">
-            <div class="linea-vertical"></div> <!-- Línea vertical -->
 
-            <div class="formacion-container">
-                <div class="card formacion-item" style="width: 18rem; height: 10rem; margin-top: 50px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Desarrollo Web Flex</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Coderhouse</h6>
-                        <p class="card-text">Abr 2024 - Jun 2024</p>
-                        <a href="#" class="card-link">Ver certificado</a>
-                    </div>
-                </div>
-                <div class="card formacion-item" style="width: 18rem;">
-                    <div class="card-body">
-                        <img src="./assets/img/logoPatron.png" class="card-img-top" alt="...">
-                    </div>
-                </div>
-            </div>
+    <!--proyectos-->
 
-            <div class="formacion-container">
-                <div class="card formacion-item" style="width: 18rem; height: 10rem; margin-top: 50px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Desarrollo Web Flex</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Coderhouse</h6>
-                        <p class="card-text">Abr 2024 - Jun 2024</p>
-                        <a href="#" class="card-link">Ver certificado</a>
-                    </div>
-                </div>
-                <div class="card formacion-item" style="width: 18rem;">
-                    <div class="card-body">
-                        <img src="./assets/img/logoPatron.png" class="card-img-top" alt="...">
-                    </div>
-                </div>
-            </div>
+    <section class="proyectos-grid">
+        <h2 class="proyectos-title">Proyectos UX/UI</h2>
+        <div class="proyectos-container">
+            <div class="galeria">
+                <div class="itemGaleria laboratorio-grid">
+                    <a href="">
+                        <img src="./assets/img/laboratorioPortada.jpg" alt="">
+                        <div class="overlay">
+                            <div class="text">Laboratorio teleoperado</div>
+                        </div>
 
-            <div class="formacion-container">
-                <div class="card formacion-item" style="width: 18rem; height: 10rem; margin-top: 50px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Desarrollo Web Flex</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Coderhouse</h6>
-                        <p class="card-text">Abr 2024 - Jun 2024</p>
-                        <a href="#" class="card-link">Ver certificado</a>
-                    </div>
-                </div>
-                <div class="card formacion-item" style="width: 18rem;">
-                    <div class="card-body">
-                        <img src="./assets/img/logoPatron.png" class="card-img-top" alt="...">
-                    </div>
-                </div>
-            </div>
+                    </a>
 
-            <div class="formacion-container">
-                <div class="card formacion-item" style="width: 18rem; height: 10rem; margin-top: 50px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Desarrollo Web Flex</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Coderhouse</h6>
-                        <p class="card-text">Abr 2024 - Jun 2024</p>
-                        <a href="#" class="card-link">Ver certificado</a>
-                    </div>
                 </div>
-                <div class="card formacion-item" style="width: 18rem;">
-                    <div class="card-body">
-                        <img src="./assets/img/logoPatron.png" class="card-img-top" alt="...">
-                    </div>
-                </div>
-            </div>
-
-            <div class="formacion-container">
-                <div class="card formacion-item" style="width: 18rem; height: 10rem; margin-top: 50px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Desarrollo Web Flex</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Coderhouse</h6>
-                        <p class="card-text">Abr 2024 - Jun 2024</p>
-                        <a href="#" class="card-link">Ver certificado</a>
-                    </div>
-                </div>
-                <div class="card formacion-item" style="width: 18rem;">
-                    <div class="card-body">
-                        <img src="./assets/img/logoPatron.png" class="card-img-top" alt="...">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="proyectos">
-        <h2 class="text-center my-4">Proyectos UX/UI</h2>
-        <div class="galeria proyectos">
-            <div class="itemGaleria laboratorio-grid">
-                <a href="">
-                    <img src="./assets/img/laboratorioPortada.jpg" alt="">
+                <div class="itemGaleria aula-grid">
+                    <img src="./assets/img/proyecto2.jpg" alt="">
                     <div class="overlay">
-                        <div class="text">Laboratorio teleoperado</div>
+                        <div class="text">Aula Virtual</div>
                     </div>
-
-                </a>
-
-            </div>
-            <div class="itemGaleria aula-grid">
-                <img src="./assets/img/proyecto2.jpg" alt="">
-                <div class="overlay">
-                    <div class="text">Aula Virtual</div>
                 </div>
-            </div>
-            <div class="itemGaleria comad-grid">
-                <img src="./assets/img/comad1.png" alt="">
-                <div class="overlay">
-                    <div class="text">Comad System Monitoring / App Inspection</div>
+                <div class="itemGaleria comad-grid">
+                    <a href="./pages/comad.html">
+                        <img src="./assets/img/comad1.png" alt="">
+                        <div class="overlay">
+                            <div class="text">Comad System Monitoring / App Inspection</div>
+                        </div>
+
+                    </a>
                 </div>
 
-            </div>
-
-            <div class="itemGaleria  button-grid">
-                <div class="full-size-button">
-                    <button type="button" class="btn btn-outline-primary btn-lg button-grid">Ver todos</button>
+                <div class="itemGaleria  button-grid"> <!--button-->
+                    <a href="./pages/proyectos.html" style="text-decoration: none;">
+                        <div class="full-size-button">
+                            <button type="button" class="btn btn-outline-primary btn-lg button-grid" >Ver todos</button>
+                        </div>
+                    </a>
                 </div>
-            </div>
 
+            </div>
 
 
 
     </section>
 
+    <!--footer-->
     <footer class="grillaLines footer">
         <h2>Contacto</h2>
-        <div >
+        <div>
             <ul class="listaContacto">
                 <li><i class="fa-regular fa-envelope" style="margin-right: 16px;"></i>iugaldedesigner@gmail.com</li>
                 <li><i class="fa-brands fa-whatsapp" style="margin-right: 16px;"></i>+569 6152 4411</li>
@@ -379,17 +343,26 @@
             <h4>Escribeme!</h4>
             <div class="mb-3 ">
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu correo">
-              </div>
-              <div class="mb-3">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Deja tu mensaje"></textarea>
-              </div>
-              <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    placeholder="Deja tu mensaje"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar</button>
         </div>
         <h6>&#169;Copyright 2024 | Todos los derechos reservados</h6>
         <div class="irArriba">
-            <a class="btn btn-primary" href="#arriba" role="button"><i class="fa-solid fa-jet-fighter-up" style="margin-right: 8px;"></i>Ir arriba</a>
+            <a class="btn btn-primary" href="#arriba" role="button"><i class="fa-solid fa-jet-fighter-up"
+                    style="margin-right: 8px;"></i>Ir arriba</a>
         </div>
     </footer>
+
+
+
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
