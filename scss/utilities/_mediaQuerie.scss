@@ -1,0 +1,148 @@
+/* media queries */
+
+@media screen and (max-width:930px) {
+    header .header-der i {
+        display: none;
+    }
+
+    header h4 {
+        font-size: 0.55rem;
+    }
+
+    header .header-izq {
+        width: auto;
+    }
+
+
+    nav ul a {
+        font-size: 0.75rem;
+    }
+
+
+}
+
+@media screen and (max-width:780px) {
+    nav ul {
+        display: none;
+    }
+
+    header .header-der i {
+        display: flex;
+        align-items: center;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "laboratorio-grid aula-grid"
+            "comad-grid button-grid";
+        margin: 16px 16px 88px 16px;
+    }
+    .itemLinea{ /*item linea de tiempo*/
+        display: flex; flex-direction: column; align-items: center;
+    }
+    .itemLinea i {
+        display: none;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .sobreMi-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-column: 2/3;
+        margin: 16px;
+        text-align: justify;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (max-width: 540px){
+    /*listaContactos*/
+.grillaLines div:nth-child(2){ 
+    grid-column: 1 /5;
+    
+}
+.listaContacto{ 
+    list-style:none;
+}
+.listaContacto li{ 
+    margin:16px 0px;
+}
+/* escribeme*/
+.grillaLines div:nth-child(3){ 
+    grid-column: 1 /5;
+    
+}
+.escribeme{
+    margin: 64px 0px;
+    width: 80%;
+}
+
+}
+
+@media screen and (max-width:400px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "laboratorio-grid laboratorio-grid"
+            "aula-grid aula-grid"
+            "comad-grid comad-grid"
+            "button-grid button-grid";
+            
+            margin: 16px 16px 88px 16px;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    nav ul {
+        display: none;
+    }
+
+    header .header-der i {
+        display: flex;
+        align-items: center;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "laboratorio-grid laboratorio-grid"
+            "aula-grid aula-grid"
+            "comad-grid comad-grid"
+            "button-grid button-grid";
+            margin: 16px 16px 88px 16px;
+    }
+
+}
+
+@media screen and (max-width:1000px){
+
+  
+
+    main div:nth-child(2){
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+    
+    
+    main div:nth-child(3){
+        grid-column: 1/4; 
+        grid-row: 3/4;
+        
+    }
+    main div:nth-child(4){
+        grid-column: 1/4; 
+        grid-row: 4/5;
+        
+    }
+   
+
+    
+}

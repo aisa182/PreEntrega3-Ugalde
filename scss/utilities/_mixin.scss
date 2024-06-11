@@ -1,0 +1,8 @@
+@mixin display ($display, $justify-items, $align-items){
+    display: $display;
+    justify-items:$justify-items;
+    align-items: $align-items;
+}
+
+//estas variables funcionan solo en el contexto de este código
+//no son como _variables.scss las cuales podemos usar en cualquier parte

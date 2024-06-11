@@ -1,0 +1,311 @@
+/*grilla*/
+
+#index-grid {
+    @include display(grid,center,center);
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header"
+    "portada"
+    "sobreMi"
+    "habilidades"
+    "formacion"
+    "experiencia"
+    "proyectos"
+    "footer";
+    width: 100%;
+    
+}
+
+/*portada*/
+
+.portada-grid {
+    grid-area: portada;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+    
+}
+
+.portada-grid div{
+    display: flex;
+    justify-content: center;
+    grid-column: 1/4;
+    margin: 80px 0px;
+}
+
+/*sobreMi*/
+
+.sobreMi-grid {
+    grid-area: sobreMi;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: auto;
+    width: 100%;
+}
+
+.sobreMi-container{
+    display: flex;
+    justify-content: center;
+    grid-column: 2/3;
+    margin: 16px;
+    text-align: justify;
+    align-items: center;
+}
+
+.sobreMi-container p{
+    margin: 32px;
+}
+
+
+
+/*habilidades*/
+
+.habilidades-grid {
+    grid-area: habilidades;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: auto;
+    width: 100%;
+}
+
+.habilidades-title{
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.habilidades-grid div {
+    grid-column: 2/3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.habilidades-item {
+    margin: 32px;
+
+}
+
+
+/*formacion*/
+.formacion-grid{
+    grid-area: formacion;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: auto;
+    width: 100%;
+    position: relative; /* Añade esto para permitir el posicionamiento absoluto de la línea */
+}
+
+.formacion-title{
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.formacion-grid div:nth-child(2) { /*linea de tiempo*/
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Añade esto para el posicionamiento de la línea dentro de este div */
+}
+
+.formacion-grid div:nth-child(2) h3{ /*años*/
+    background-color: white;
+    margin: 16px;
+}
+
+.itemLinea{ /*item linea de tiempo*/
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    margin: 8px 0px;
+}
+
+.itemLinea i { /*item linea de tiempo*/
+    margin: 8px;
+}
+
+.vertical-line { /* Línea vertical */
+    position: absolute;
+    left: 50%; /* Centra la línea en la columna */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: black; /* Cambia el color según tus necesidades */
+    z-index: -1; /* Asegura que esté detrás del contenido */}
+
+
+
+
+/*experiencia*/
+.experiencia-grid{
+    grid-area: experiencia;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: auto;
+    width: 100%;
+    position: relative; /* Añade esto para permitir el posicionamiento absoluto de la línea */
+}
+
+.experiencia-title{
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.experiencia-grid div:nth-child(2) { /*linea de tiempo*/
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Añade esto para el posicionamiento de la línea dentro de este div */
+}
+.experiencia-grid div:nth-child(2) h3{ /*años*/
+    background-color: white;
+    margin: 16px;
+}
+
+.itemLinea{ /*item linea de tiempo*/
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    margin: 8px 0px;
+}
+
+.itemLinea i { /*item linea de tiempo*/
+    margin: 8px;
+}
+
+.vertical-line { /* Línea vertical */
+    position: absolute;
+    left: 50%; /* Centra la línea en la columna */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: black; /* Cambia el color según tus necesidades */
+    z-index: -1; /* Asegura que esté detrás del contenido */}
+
+
+
+
+
+
+
+
+
+/*proyectos*/
+
+.proyectos-grid{
+    grid-area: proyectos;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: auto;
+    width: 100%;
+}
+
+.proyectos-title{
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.proyectos-container{
+    grid-column: 2/3;
+    margin: 88px 0px;
+    
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "laboratorio-grid aula-grid comad-grid button-grid";
+    gap: 15px;
+}
+
+
+.itemGaleria {
+    position: relative;
+}
+
+.itemGaleria img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    padding: 0px;
+    border: 1px solid grey;
+    border-radius: 16px;
+}
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.itemGaleria:hover .overlay {
+    opacity: 1;
+}
+
+.laboratorio-grid {
+    grid-area: laboratorio-grid;
+}
+
+.aula-grid {
+    grid-area: aula-grid;
+}
+
+.comad-grid {
+    grid-area: comad-grid;
+}
+
+.button-grid {
+    width: 100%;
+    height: 100%;
+    grid-area: button-grid;
+}
+
+.full-size-button {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* irArriba */
+.irArriba {
+    position: fixed;
+    bottom: 15px;
+    right: 5px;
+}
+
+.irArriba img {
+    width: 80%;
+}
