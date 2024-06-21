@@ -1,0 +1,154 @@
+/*habilidadesPage*/
+
+#habilidadesPage-grid{
+    @include display(grid,center,center);
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    width: 100%;
+    background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+}
+
+main .habSofMet-title{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: flex-start;
+    margin: 64px 32px;
+    color: white;
+}
+
+/*habilidades*/
+
+main .hab-container{
+    display:flex;
+    flex-direction: column;
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+main .hab-container h2{
+    margin: 32px;
+    color: white;
+}
+
+main .hab-container .hab-items{
+    display:flex;
+    flex-wrap: wrap;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    justify-content: center;
+    
+}
+
+main .hab-container .hab-items .hab-item{
+margin: 16px 32px;
+background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+
+.list-group-item {
+    display: flex; 
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+/*software*/
+
+main .sof-container{
+    display:flex;
+    flex-direction: column;
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+
+main .sof-container h2{
+    margin: 32px;
+    color: white;
+}
+
+main .sof-container ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main .sof-container ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .sof-container ul li p{
+    margin-top: 16px;
+}
+
+/*metodos*/
+
+
+main .met-container{
+    display:flex;
+    flex-direction: column;
+    grid-column: 1/4;
+    grid-row: 4/5;
+}
+
+main .met-container{
+    display:flex;
+    flex-direction: column;
+    grid-column: 1/4;
+    grid-row: 4/5;
+}
+
+main .met-container h2{
+    margin: 32px;
+    color: white;
+}
+
+main .met-container .met-items{
+    display:flex;
+    flex-wrap: wrap;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    justify-content: center;   
+    
+}
+
+main .met-container .met-items .met-item{
+    margin: 64px 16px;
+    width: 400px;   
+    
+}
+
+main .met-container .met-items .met-item li{
+    margin: 16px;
+    
+}
+
+main .met-container .met-items .met-item li p{
+    color: white;
+}
