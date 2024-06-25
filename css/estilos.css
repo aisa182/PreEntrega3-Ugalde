@@ -27,10 +27,10 @@ header {
   top: 0;
   z-index: 100;
   width: 100%;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgb(76, 76, 76);
 }
 
-.custom-header {
+.custom-navbar {
   background: #232526; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #414345, #232526); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -41,11 +41,11 @@ header {
 }
 
 .custom-nav-link:hover {
-  color: #ff00ae; /* Cambia este valor al color que desees para los enlaces al pasar el ratón */
+  color: rgb(240, 174, 19); /* Cambia este valor al color que desees para los enlaces al pasar el ratón */
 }
 
-.active {
-  font-weight: bold;
+.activo {
+  color: rgb(240, 174, 19);
 }
 
 /*grilla*/
@@ -375,9 +375,9 @@ main .carouselProyecto { /*carousel*/
   grid-template-rows: auto;
   grid-template-areas: "header" "main" "footer";
   width: 100%;
-  background: #0f0c29; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 main {
@@ -393,7 +393,7 @@ main .habSofMet-title {
   display: flex;
   justify-content: flex-start;
   margin: 64px 32px;
-  color: white;
+  color: rgb(235, 235, 235);
 }
 
 /*habilidades*/
@@ -406,7 +406,7 @@ main .hab-container {
 
 main .hab-container h2 {
   margin: 32px;
-  color: white;
+  color: rgb(235, 235, 235);
 }
 
 main .hab-container .hab-items {
@@ -419,14 +419,26 @@ main .hab-container .hab-items {
 
 main .hab-container .hab-items .hab-item {
   margin: 16px 32px;
-  background: #232526; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #414345, #232526); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #424242;
 }
 
 .list-group-item {
   display: flex;
   justify-content: space-between;
+  background: #424242;
+}
+
+.card-title {
+  color: rgb(198, 198, 198);
+}
+
+.card-body {
+  color: rgb(198, 198, 198);
+}
+
+.list-group-item {
+  border: none;
+  color: rgb(198, 198, 198);
 }
 
 /*software*/
@@ -439,7 +451,7 @@ main .sof-container {
 
 main .sof-container h2 {
   margin: 32px;
-  color: white;
+  color: rgb(235, 235, 235);
 }
 
 main .sof-container ul {
@@ -457,6 +469,7 @@ main .sof-container ul li {
 
 main .sof-container ul li p {
   margin-top: 16px;
+  color: rgb(198, 198, 198);
 }
 
 /*metodos*/
@@ -476,7 +489,7 @@ main .met-container {
 
 main .met-container h2 {
   margin: 32px;
-  color: white;
+  color: rgb(235, 235, 235);
 }
 
 main .met-container .met-items {
@@ -490,19 +503,16 @@ main .met-container .met-items {
 main .met-container .met-items .met-item {
   margin: 64px 16px;
   width: 400px;
+  background-color: #424242;
+  color: rgb(198, 198, 198);
 }
 
 main .met-container .met-items .met-item li {
   margin: 16px;
 }
 
-main .met-container .met-items .met-item li p {
-  color: white;
-}
-
 footer {
   grid-area: footer;
-  background-color: rgb(244, 244, 255);
 }
 
 .footer-grid {
@@ -512,6 +522,7 @@ footer {
   width: 100%;
   justify-items: center;
   align-items: center;
+  color: rgb(198, 198, 198);
   /*title*/
   /*listaContactos*/
   /* escribeme*/
@@ -534,9 +545,18 @@ footer {
   margin: 64px 0px;
   width: 80%;
 }
+.footer-grid .btn-primary {
+  background-color: rgb(240, 174, 19);
+  color: black;
+  border-color: rgb(240, 174, 19);
+}
 .footer-grid h6 {
   grid-column: 1/5;
   margin: 24px 0px;
+}
+
+h2 {
+  color: rgb(235, 235, 235);
 }
 
 /* media queries */

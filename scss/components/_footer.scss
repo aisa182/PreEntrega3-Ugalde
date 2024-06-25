@@ -1,6 +1,5 @@
 footer{
     grid-area: footer;
-    background-color: $grey;
 }
 .footer-grid {
     display: grid;
@@ -9,10 +8,12 @@ footer{
     width: 100%;
     justify-items: center;
     align-items: center;
+    color: $text-body;
     
     /*title*/
     .h2{
         grid-column: 1 /5;
+       
     }
     
     /*listaContactos*/
@@ -32,12 +33,22 @@ footer{
         margin: 64px 0px;
         width: 80%;
     }
+    .btn-primary{
+        background-color: $primary;
+        color: black;
+        border-color: $primary;
+    }
     /*Copyright*/
     h6{
         grid-column: 1 /5;
         margin: 24px 0px;
     
     }
+}
+
+h2{
+   
+    color: $text-title;
 }
 
 

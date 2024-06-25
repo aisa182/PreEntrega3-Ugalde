@@ -9,10 +9,10 @@
     "main"
     "footer";
     width: 100%;
-    background: #0f0c29;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
 main{
@@ -28,7 +28,7 @@ main .habSofMet-title{
     display: flex;
     justify-content: flex-start;
     margin: 64px 32px;
-    color: white;
+    color: $text-title;
 }
 
 /*habilidades*/
@@ -38,11 +38,12 @@ main .hab-container{
     flex-direction: column;
     grid-column: 1/4;
     grid-row: 2/3;
+    
 }
 
 main .hab-container h2{
     margin: 32px;
-    color: white;
+    color: $text-title;
 }
 
 main .hab-container .hab-items{
@@ -56,9 +57,7 @@ main .hab-container .hab-items{
 
 main .hab-container .hab-items .hab-item{
 margin: 16px 32px;
-background: #232526;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #424242;  
 
 }
 
@@ -67,11 +66,21 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 .list-group-item {
     display: flex; 
     justify-content: space-between;
+    background: #424242;  
 }
 
+.card-title{
+    color: $text-body
+}
 
+.card-body{
+    color: $text-body
+}
 
-
+.list-group-item{
+    border: none;
+    color: $text-body
+}
 
 
 
@@ -87,7 +96,7 @@ main .sof-container{
 
 main .sof-container h2{
     margin: 32px;
-    color: white;
+    color: $text-title;
 }
 
 main .sof-container ul{
@@ -105,6 +114,7 @@ main .sof-container ul li {
 
 main .sof-container ul li p{
     margin-top: 16px;
+    color: $text-body;
 }
 
 /*metodos*/
@@ -126,7 +136,7 @@ main .met-container{
 
 main .met-container h2{
     margin: 32px;
-    color: white;
+    color:$text-title;
 }
 
 main .met-container .met-items{
@@ -140,7 +150,9 @@ main .met-container .met-items{
 
 main .met-container .met-items .met-item{
     margin: 64px 16px;
-    width: 400px;   
+    width: 400px;  
+    background-color: $card-body; 
+    color: $text-body;
     
 }
 
@@ -149,6 +161,3 @@ main .met-container .met-items .met-item li{
     
 }
 
-main .met-container .met-items .met-item li p{
-    color: white;
-}
